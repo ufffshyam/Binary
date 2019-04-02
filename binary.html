@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://www.trademarkapi.com/api.js"></script>
+        <script src="jquery_banner.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#here').banner({
+                    'open': true,
+                    'width': '590px',
+                    'height': '600px',
+                    'days': '1',
+                    'url': 'https://www.echyip.com/img/images/echyip.png'
+                });
+
+                $('#here').click(function () {
+                    $('#here').banner({'open': false});
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="here"></div>   
+    </body>
+</html>
