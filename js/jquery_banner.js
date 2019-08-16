@@ -49,4 +49,4 @@
         }
         selector.parent().parent().css('display', 'none');
     }
-}( jQuery )); 
+}( jQuery ));  
