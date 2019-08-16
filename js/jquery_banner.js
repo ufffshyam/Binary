@@ -5,7 +5,6 @@
             return false;
         }
         $(this).css({'background': '#01000175','border-radius': '2px', 'box-shadow': '0px 0px 10px rgba(0,0,0,0.5)','width': '100%', 'height': '100%', 'margin': '0 auto', 'position': 'fixed', 'top': '0', 'left': '0', 'z-index': '1000000'});
-        var url = $(this).data('url');
         var isVisited = CheckUserVisitedOrNotVisited("visited");
         if (isVisited) {
             $(this).css('display', 'none');
