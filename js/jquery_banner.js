@@ -18,10 +18,9 @@
             removePopupForVisited(options.days);
         }
         return true;
-    };
+    }
    
     $(document).on('click', 'button.styled-submit', function(){
-        var params = $(this).data('params');
         removePopupForVisitedClick($(this), $(this).data('params'));
     });
   
@@ -36,14 +35,14 @@
                 return c.substring(nameEQ.length, c.length);
         }
         return null;
-    };
+    }
    
     function removePopupForVisited(days) {
         var date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         var expires = "; expires=" + date.toGMTString();
         document.cookie = "visited=true;" + expires + "; path=/";
-    };
+    }
    
     function removePopupForVisitedClick(selector, params){
         if(params.days){
